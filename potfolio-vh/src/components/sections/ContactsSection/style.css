@@ -1,0 +1,31 @@
+.contacts-section{
+    background-image: url("./../../../assets/contacts-bg.png");
+    background-size: 100% 100%;
+    height: auto;
+}
+
+.contacts-section img{
+    width: 30px;
+    margin-right: 10px;
+}
+
+.contacts-section a{
+    color: whitesmoke;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.contacts-section a:hover{
+    
+    text-decoration: underline;
+    color: tomato;
+    text-decoration-style: double;
+}
+
+.contacts-container{
+    text-align: center;
+}
+
+.contact{
+    margin: 30px;
+}

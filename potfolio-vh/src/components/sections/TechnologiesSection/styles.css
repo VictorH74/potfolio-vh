@@ -1,0 +1,21 @@
+.tech-section {
+    background-color: rgb(29, 29, 29);
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    padding: 20px 0 20px 0;
+}
+
+.container-cards {
+    margin: 0 auto;
+}
+
+.col-sm-6 {
+    display: flex;
+    justify-content: center;
+}
+
+
+
