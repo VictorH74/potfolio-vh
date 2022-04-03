@@ -12,36 +12,49 @@ const slides = [forSlide1, forSlide2, forSlide3, forSlide4]
 
 function Projects() {
     const [opacity, setOpacity] = useState(0);
+//    const [widthLimit, setWidthLimit] = useState(false);
 
+/*
+    setInterval(() => {
+        if(document.body.clientWidth < 900){
+            setWidthLimit(true);
+        }else{
+            setWidthLimit(false);
+        }
+    }, 1000);
+*/
+    
     function handleMouseOver(){
         setOpacity(1);
+
     }
     function handleMouseOut(){
         setOpacity(0);
+
     }
 
     var detailsVisibility = {
         opacity: opacity
     }
-
     return (
         <section className="proj-section">
-
-            <h1 className="section-title">&#x0003C;Meus Projetos&#x0002F;&#x0003E;</h1>
+            <a name="projetos"></a>
+            <h1 className="section-title">Meus Projetos</h1>
+            
 
             <div id="carouselExampleCaptions" className="carousel slide" data-bs-ride="carousel">
 
                 <div className="carousel-indicators">
                     {projectDatas.map(
                         image =>
-                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to={image.num} className={image.id === 1 ? "active" : ""} aria-current={image.id === 1 ? "true" : ""} aria-label={image.slide}></button>
+                            <button key={image.id} type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to={image.num} className={image.id === 1 ? "active" : ""} aria-current={image.id === 1 ? "true" : ""} aria-label={image.slide}></button>
                     )}
                 </div>
 
                 <div className="carousel-inner">
                     {projectDatas.map(
                         image =>
-                            <div className={image.id === 1 ? "carousel-item active" : "carousel-item"}>
+                            <div key={image.id} className={image.id === 1 ? "carousel-item active" : "carousel-item"}>
                                 <div onMouseOver={handleMouseOver} onMouseOut={handleMouseOut} className="slide-container">
                                     <img  src={slides[image.num] ? slides[image.num] : "https://picsum.photos/800/600?random=1"} className="d-block" alt="..." />
                                     <div style={detailsVisibility} className="details">
@@ -54,7 +67,7 @@ function Projects() {
                                             <div>
                                                 {icons.map(
                                                     icon =>
-                                                        image.technologies.includes(icon.name) ? <img src={icon.iconURL} alt="" /> : ""
+                                                        image.technologies.includes(icon.name) ? <img key={icon.id} src={icon.iconURL} alt="" /> : ""
                                                 )}
                                             </div>
                                         </div>

@@ -1,0 +1,31 @@
+.navbar{
+    position: fixed;
+    left: 0;
+    right: 0;
+    height: 120px;
+    background-color: #00000049;
+    z-index: 9999;
+    transition: 400ms;
+    padding: 10px;
+    color: whitesmoke;
+}
+
+.menu{
+    display: flex;
+    margin-bottom: -30px;
+    
+}
+
+.menu li{
+    list-style: none;
+}
+
+.menu li a{
+    font-size: 21px;
+    padding: 15px;
+    color: whitesmoke;
+    text-decoration: none;
+}
+.menu li a:hover{
+    color: rgb(145, 145, 145);
+}

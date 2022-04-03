@@ -5,11 +5,12 @@ import {contactsDatas} from "./../../../datas"
 function Contacts(){
     return(
         <section className="contacts-section">
-            <h1 className="section-title">&#x0003C;Contatos&#x0002F;&#x0003E;</h1>
+            <a name="contatos"></a>
+            <h1 className="section-title">Contatos</h1>
             <div className="contacts-container">
                 {contactsDatas.map(
                     data => 
-                        <div className="contact">
+                        <div key={data.id} className="contact">
                             <a href={data.link} target="_blank"><span><img src={data.icon} alt=""/></span>{data.userName}</a>
                         </div>
                         

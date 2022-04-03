@@ -6,6 +6,7 @@ import { ReactComponent as Arrow } from "./../../../assets/arrow.svg"
 function Presentation() {
 
     return (
+
         <section className="pres-section">
             <div className="div-img">
                 <img src={imgVictor} alt="" />

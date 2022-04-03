@@ -1,7 +1,8 @@
 .contacts-section{
     background-image: url("./../../../assets/contacts-bg.png");
-    background-size: 100% 100%;
+    background-size: 100% 200%;
     height: auto;
+    padding-top: 10px;
 }
 
 .contacts-section img{
@@ -18,7 +19,7 @@
 .contacts-section a:hover{
     
     text-decoration: underline;
-    color: tomato;
+    color: var(--secondaryColor);
     text-decoration-style: double;
 }
 
