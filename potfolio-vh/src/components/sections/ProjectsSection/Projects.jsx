@@ -2,27 +2,9 @@ import React, { useState } from "react";
 import "./style.css"
 import icons, { projectDatas } from "./../../../datas"
 
-// Images
-import forSlide1 from "./../../../assets/project-images/DSMovies.png"
-import forSlide2 from "./../../../assets/project-images/Seller_Department.png"
-import forSlide3 from "./../../../assets/project-images/Simon Game.png"
-import forSlide4 from "./../../../assets/project-images/snake-game.png"
-
-const slides = [forSlide1, forSlide2, forSlide3, forSlide4]
 
 function Projects() {
     const [opacity, setOpacity] = useState(0);
-//    const [widthLimit, setWidthLimit] = useState(false);
-
-/*
-    setInterval(() => {
-        if(document.body.clientWidth < 900){
-            setWidthLimit(true);
-        }else{
-            setWidthLimit(false);
-        }
-    }, 1000);
-*/
     
     function handleMouseOver(){
         setOpacity(1);
@@ -38,7 +20,7 @@ function Projects() {
     }
     return (
         <section className="proj-section">
-            <a name="projetos"></a>
+            <a name="projetos" href="#projetos"></a>
             <h1 className="section-title">Meus Projetos</h1>
             
 
@@ -52,18 +34,24 @@ function Projects() {
                 </div>
 
                 <div className="carousel-inner">
+
                     {projectDatas.map(
                         image =>
                             <div key={image.id} className={image.id === 1 ? "carousel-item active" : "carousel-item"}>
+                                
                                 <div onMouseOver={handleMouseOver} onMouseOut={handleMouseOut} className="slide-container">
-                                    <img  src={slides[image.num] ? slides[image.num] : "https://picsum.photos/800/600?random=1"} className="d-block" alt="..." />
+                                   
+                                    <img  src={image.image ? image.image : "https://picsum.photos/800/450?random=1"} className="d-block" alt="..." />
                                     <div style={detailsVisibility} className="details">
+                                       
                                         <div className="inf">
                                             <h5>{image.title}</h5>
                                             <h6>{image.description}</h6>
                                         </div>
+
                                         <div className="tech-used">
                                             <h5>Tecnologias Usadas:</h5>
+
                                             <div>
                                                 {icons.map(
                                                     icon =>
@@ -71,10 +59,10 @@ function Projects() {
                                                 )}
                                             </div>
                                         </div>
-
                                     </div>
                                 </div>
                             </div>
+
                     )}
                 </div>
 

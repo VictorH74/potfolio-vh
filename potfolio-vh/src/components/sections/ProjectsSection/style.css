@@ -1,6 +1,7 @@
 .proj-section {
     padding: 10px 0 40px 0;
     background-image: url("./../../../assets/project-images/bgProjects.gif");
+    background-size: 100% 100%;
     height: auto;
 }
 
@@ -33,9 +34,10 @@
     align-items: center;
     height: 100%;
     width: 72%;
-    margin: 0 auto;
+    margin: 15px auto;
     overflow: hidden;
     border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.507);
 }
 
 .slide-container img{
@@ -58,6 +60,7 @@
 .details h5{
     margin-bottom: 5px;
     font-weight: bolder;
+    padding: 10px;
 }
 
 .tech-used h5{
@@ -67,7 +70,7 @@
 
 .tech-used div img{
     width: 30px;
-    margin: 10px;
+    margin: 5px 10px;
 }
 
 @media (max-width: 990px){
@@ -91,13 +94,17 @@
 }
 
 @media (max-width: 500px){
+    .proj-section{
+        background-size: 150% 100%;
+    }
+
     .slide-container{
         width: 100%;
         border-radius: 0;
     }
 
     .details{
-        height: 50%;
+        height: 70%;
         padding: 0;
     }
 

@@ -8,11 +8,7 @@
     padding: 20px 0 20px 0;
 }
 
-.container-cards {
-    margin: 0 auto;
-}
-
-.col-sm-6 {
+.icons {
     display: flex;
     justify-content: center;
 }

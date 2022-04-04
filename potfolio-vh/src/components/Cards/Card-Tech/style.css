@@ -4,11 +4,13 @@
     align-items: center;
     
     border-radius: 50%;
-    height: 180px;
-    width: 180px;
+    height: 150px;
+    width: 150px;
     margin-bottom: 50px;
     box-shadow: 0 0 10px rgb(11, 91, 145);
 }
+
+/* border: 2px solid tomato; */
 
 .card-tech-section:hover{
     border: 2px solid rgb(11, 91, 145);
@@ -23,6 +25,13 @@
 @media (max-width:580px){
     .card-tech-section{
         width: 180px;
+    }
+
+}
+@media (max-width:450px){
+    .card-tech-section{
+        height: 100px;
+        width: 100px;
     }
 
 }

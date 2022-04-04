@@ -1,6 +1,6 @@
 .contacts-section{
     background-image: url("./../../../assets/contacts-bg.png");
-    background-size: 100% 200%;
+    background-size: 100% 250%;
     height: auto;
     padding-top: 10px;
 }
@@ -29,4 +29,16 @@
 
 .contact{
     margin: 30px;
+}
+
+footer{
+    padding-top: 50px;
+    text-align: center;
+    color: var(--secondaryColor);
+}
+
+@media (max-width:500px){
+    .contacts-section{
+        background-size: 110% 100%;
+    }
 }

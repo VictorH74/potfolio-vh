@@ -2,12 +2,21 @@
     position: fixed;
     left: 0;
     right: 0;
-    height: 120px;
-    background-color: #00000049;
+    height: 100px;
     z-index: 9999;
     transition: 400ms;
     padding: 10px;
     color: whitesmoke;
+}
+
+.navbar button{
+    background-color: transparent;
+    border: none;
+    padding: 10px;
+}
+
+.menu-icon{
+    display: none;
 }
 
 .menu{
@@ -16,16 +25,41 @@
     
 }
 
-.menu li{
-    list-style: none;
+li{
+ list-style: none;
 }
 
-.menu li a{
+li a{
     font-size: 21px;
     padding: 15px;
     color: whitesmoke;
     text-decoration: none;
+    list-style: none;
 }
 .menu li a:hover{
     color: rgb(145, 145, 145);
+}
+
+.offcanvas{
+    z-index: 9999;
+    width: 60%;
+    background-color: var(--primaryColor);
+}
+
+.offcanvas ul li{
+    margin:  0 0 20px -40px;
+}
+
+@media (max-width: 500px){
+    .menu-icon{
+        display: block;
+    }
+
+    nav{
+        display: none;
+    }
+
+    .menu{
+        display: block;
+    }
 }
