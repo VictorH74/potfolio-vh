@@ -14,9 +14,25 @@
     border-radius: 15px;
 }
 
+
+@keyframes spinn {
+    from{
+        transform: rotateX(90deg); 
+    }
+    to{
+        transform: rotateX(0deg);
+    }
+}
+
 @media (max-width:580px){
     .card-tech-section{
         width: 180px;
+        margin-bottom: 0;
+    }
+
+    .card-tech-section img{
+        width: 60%;
+        border-radius: 5px;
     }
 
 }

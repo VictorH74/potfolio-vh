@@ -5,8 +5,10 @@ import "./styles.css"
 export default function CardProj(props) {
     return (
         <div className="card-proj">
-            {props.index % 2 === 0 ? <img src={props.image} alt="" /> : ""}
-            <div className="proj-infor" style={{ textAlign: props.index % 2 !== 0 ? "end" : "" }}>
+            {props.index % 2 === 0 || window.innerWidth < 900 ? <img src={props.image} alt="" /> : ""}
+            <div className="proj-infor" style={
+                { textAlign: props.index % 2 !== 0 && window.innerWidth > 900? "end" : "" }
+                }>
                 <h3 className="theme-color">{props.title}</h3>
                 <h4>{props.description}</h4>
                 {
@@ -23,7 +25,7 @@ export default function CardProj(props) {
                     )}
                 </div>
             </div>
-            {props.index % 2 !== 0 ? <img src={props.image} alt="" /> : ""}
+            {props.index % 2 !== 0 && window.innerWidth > 900 ? <img src={props.image} alt="" /> : ""}
         </div>
     );
 }

@@ -3,11 +3,15 @@
     display: flex;
     justify-content: space-between;
     margin: 6% 3%;
+    animation: show 1s ease ;
+}
+
+.card-proj:nth-child(1){
+    animation-delay: 700ms;
 }
 
 .card-proj a{
     text-decoration: none;
-    margin-top: 100px;
 }
 
 .card-proj a:hover{
@@ -22,6 +26,7 @@
 }
 
 .proj-infor{
+    padding: 50px;
     width: 47%;
 }
 
@@ -30,7 +35,6 @@
     font-size: 20px;
 }
 
-
 .card-proj-techs{
     margin-top: 30px;
 }
@@ -38,4 +42,49 @@
 .card-proj-techs img{
     width: 25px;
     margin: 0 5px;
+}
+
+@keyframes show {
+    from{
+        transform: rotateX(90deg); 
+    }
+    to{
+        transform: rotateX(0deg);
+    }
+}
+
+@media (max-width:900px){
+    .card-proj{
+        display: block;
+    }
+
+    .card-proj img{
+        width: 100%;
+    }
+
+    .card-proj-techs img{
+        width: 24px;
+    }
+
+    .proj-infor{
+        width: 100%;
+        padding: 0 40px 0 40px;
+    }
+}
+
+@media (max-width:450px){
+    .proj-infor{
+        width: 100%;
+        padding: 0 20px 0 20px;
+    }
+
+    .proj-link{
+        font-size: 13px;
+        margin: 10px 0 10px 0;
+    }
+
+    .card-proj-techs{
+        margin: 0;
+    }
+
 }

@@ -12,6 +12,7 @@ font-family: "'Lora', serif";
 
 .theme-color{
     color: var(--secondaryColor);
+    font-family: 'Raleway', sans-serif; 
 }
 
 body{
@@ -34,7 +35,7 @@ section {
 }
 
 .section-title {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Raleway', sans-serif; 
     font-weight: 700;
     font-size: 2rem;
     margin: 10px 0 50px 0;
@@ -60,3 +61,22 @@ section {
 }
 
 @media(max-width: 991px) {}
+
+@media (max-width:450px){
+    section{
+        height: auto;
+    }
+
+    h3{
+        font-size: 18px;
+    }
+    
+    h4{
+        font-size: 15px;
+    }
+
+    .section-title {
+        font-size: 20px;
+        margin: 10px 0 10px 0;
+    }
+}

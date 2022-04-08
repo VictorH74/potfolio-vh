@@ -43,14 +43,15 @@ li a{
 .offcanvas{
     z-index: 9999;
     width: 60%;
-    background-color: var(--primaryColor);
+    background-color: #00000018;
+    backdrop-filter: blur(15px);
 }
 
 .offcanvas ul li{
     margin:  0 0 20px -40px;
 }
 
-@media (max-width: 500px){
+@media (max-width: 700px){
     .menu-icon{
         display: block;
     }

@@ -26,3 +26,19 @@
     padding-left: 15px;
     font-family: 'Lora', serif;
 }
+
+@media (max-width:450px){
+    .pres-section{
+        padding: 40% 3%;
+    }
+
+    .pres-section h1{
+        font-size: 50px;
+        margin: 30px 0;
+    }
+
+    .pres-section h2{
+        font-size: 28px;
+        margin-right: 10px;
+    }
+}

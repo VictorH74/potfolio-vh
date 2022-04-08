@@ -41,9 +41,11 @@ function Navbar() {
                 <div className="offcanvas-body">
                     <div className="dropdown mt-3">
                         <ul>
-                            <li><a href="#inicio">Inicio</a></li>
-                            <li><a href="#tecnologias">Tecnologias</a></li>
-                            <li><a href="#projetos">Projetos</a></li>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#technologies">Technologies</a></li>
+                            <li><a href="#projects">Projects</a></li>
+                            <li><a href="#games">Games</a></li>
+                            <li><a href="#contacts">Contacts</a></li>
                         </ul>
                     </div>
                 </div>

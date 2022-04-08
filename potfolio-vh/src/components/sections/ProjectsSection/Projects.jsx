@@ -36,10 +36,10 @@ function Projects() {
             }
             <div className="btn-show-all">
                 <button onClick={()=>setAllProjects(!allProjects)}>
-                    <span className="theme-color">{allProjects?"Show less":"Show all"}</span>
+                    <span className="theme-color">{allProjects?"Show Less":"Show All"}</span>
                 </button>
             </div>
-        </section >
+        </section>
     );
 }
 

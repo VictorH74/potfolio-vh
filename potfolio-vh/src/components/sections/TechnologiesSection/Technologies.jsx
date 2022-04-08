@@ -14,7 +14,7 @@ function Technologies() {
                     {
                         Icons.map(
                             (icon) =>
-                                <div className="col-xs-6 col-md-4 col-lg-3 icons" key={icon.id}>
+                                <div className="col-3 icons" key={icon.id}>
                                     <Cardtech name={icon.name} iconPath={icon.iconURL} />
                                 </div>
                         )

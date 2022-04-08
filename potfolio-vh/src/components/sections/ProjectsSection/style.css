@@ -8,9 +8,14 @@
 }
 
 .btn-show-all button{
+    transition: 400ms;
     height: 50px;
     width: 100px;
     background-color: transparent;
     border: 1px solid var(--secondaryColor);
     border-radius: 10px;
+}
+
+.btn-show-all button:hover{
+    background-color: #00000040;
 }

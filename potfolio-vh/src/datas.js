@@ -55,7 +55,7 @@ const projectDatas = [
         slide: "Slide 1",
         title: "DSMovies",
         link: "https://dsmovie-potifolio-vh.netlify.app",
-        description: "Projeto criado em um evento online de desenvolvimento Full-Stack com React e Java",
+        description: "Projeto criado em um evento online de desenvolvimento Full-Stack com React e Java. Pagina para avaliação de filmes",
         technologies: ["html5", "css3", "react", "java"],
         alt: "project image"
     },
@@ -65,7 +65,7 @@ const projectDatas = [
         slide: "Slide 2",
         title: "User and Product Registration System",
         link: "https://demoproject-vh.herokuapp.com/",
-        description: "Aplicação web usando Java com o framework Spring Boot",
+        description: "Aplicação web usando Java com o framework Spring Boot. Util para gerentes de comercio. A pagina permite que você Cadastre Usuários, produtos ou categorias de produtos",
         technologies: ["html5", "css3", "java"],
         alt: "project image"
         
@@ -76,7 +76,7 @@ const projectDatas = [
         slide: "Slide 3",
         title: "Simon Game",
         link: "https://gamezin-basico.netlify.app",
-        description: "Jogo criado usando Javascript",
+        description: "Alcance o maior score acertando o máximo a sequência correta",
         technologies: ["html5", "css3", "javascript"],
         alt: "project image"
     },
@@ -85,7 +85,7 @@ const projectDatas = [
         image: snakeGame,
         slide: "Slide 4",
         title: "Snake Game",
-        description: "Jogo criado com Python",
+        description: "Jogo da cobrinha para desktop com algumas mudanças. Quanto mais seu score for aumentando, mais rapido a cobrinha fica dificultando a locomoção",
         technologies: ["python"],
         alt: "project image"
     },
@@ -94,7 +94,7 @@ const projectDatas = [
         image: passwordManager,
         slide: "Slide 5",
         title: "Password Manager",
-        description: "Gerenciador e gerador senhas contas salvas em Emails",
+        description: "Programa para desktop que permite que você salve contas de qualque plataforma em qualquer email que você adicionar. O programa também gera senhas aleatoriamente, caso o usuário deseje",
         technologies: ["python"],
         alt: "project image"
     }

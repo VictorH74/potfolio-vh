@@ -10,7 +10,6 @@
 }
 
 .carousel-inner{
-    /*height: 90%;*/
     width: 100%;
 }
 
@@ -36,4 +35,10 @@
     overflow: hidden;
     border-radius: 10px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.507);
+}
+
+@media (max-width: 450px) {
+    .slide-container{
+        width: 100%;
+    }
 }

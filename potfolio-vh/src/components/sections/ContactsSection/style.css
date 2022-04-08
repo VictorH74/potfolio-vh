@@ -48,4 +48,8 @@ footer{
     .contacts-section{
         background-size: 110% 100%;
     }
+
+    .contacts-section a{
+        font-size: 15px;
+    }
 }
