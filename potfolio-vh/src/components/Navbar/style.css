@@ -2,7 +2,7 @@
     position: fixed;
     left: 0;
     right: 0;
-    height: 100px;
+    height: 90px;
     z-index: 9999;
     transition: 400ms;
     padding: 10px;

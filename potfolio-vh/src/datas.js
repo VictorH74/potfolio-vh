@@ -51,20 +51,20 @@ const technologieIcons = [
 const projectDatas = [
     {
         id: 1,
-        num: 0,
         image: dsMovieImg,
         slide: "Slide 1",
         title: "DSMovies",
+        link: "https://dsmovie-potifolio-vh.netlify.app",
         description: "Projeto criado em um evento online de desenvolvimento Full-Stack com React e Java",
         technologies: ["html5", "css3", "react", "java"],
         alt: "project image"
     },
     {
         id: 2,
-        num: 1,
         image: sellerDepartImg,
         slide: "Slide 2",
-        title: "Seller and Department",
+        title: "User and Product Registration System",
+        link: "https://demoproject-vh.herokuapp.com/",
         description: "Aplicação web usando Java com o framework Spring Boot",
         technologies: ["html5", "css3", "java"],
         alt: "project image"
@@ -72,17 +72,16 @@ const projectDatas = [
     },
     {
         id: 3,
-        num: 2,
         image: simonGame,
         slide: "Slide 3",
         title: "Simon Game",
+        link: "https://gamezin-basico.netlify.app",
         description: "Jogo criado usando Javascript",
         technologies: ["html5", "css3", "javascript"],
         alt: "project image"
     },
     {
         id: 4,
-        num: 3,
         image: snakeGame,
         slide: "Slide 4",
         title: "Snake Game",
@@ -92,7 +91,6 @@ const projectDatas = [
     },
     {
         id: 5,
-        num: 4,
         image: passwordManager,
         slide: "Slide 5",
         title: "Password Manager",

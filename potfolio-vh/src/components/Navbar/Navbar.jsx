@@ -4,25 +4,16 @@ import { ReactComponent as MenuIcon } from "./../../assets/menu-icon.svg"
 
 function Navbar() {
     const [scrollUp, setScrollUp] = useState(true);
-
     const initialStyle = {
         backgroundColor: "#00000000",
     }
     const afterStyle = {
-        backgroundColor: "#00000060",
+        backgroundColor: "#00000070",
     }
-
     document.addEventListener("scroll", () => {
         let pageY = window.pageYOffset
-
-        if (pageY === 0) {
-            setScrollUp(true);
-        }
-        else {
-            setScrollUp(false);
-        }
-    })
-
+        pageY === 0?setScrollUp(true):setScrollUp(false);
+    });
     return (
         <>
             <header style={scrollUp ? initialStyle : afterStyle} className="navbar" id="vh">
@@ -32,17 +23,15 @@ function Navbar() {
                         <MenuIcon />
                     </button>
                 </div>
-
                 <nav>
                     <ul className="menu">
-                        <li><a href="#inicio">Inicio</a></li>
-                        <li><a href="#tecnologias">Tecnologias</a></li>
-                        <li><a href="#projetos">Projetos</a></li>
-                        <li><a href="#contatos">Contatos</a></li>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#technologies">Technologies</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#games">Games</a></li>
+                        <li><a href="#contacts">Contacts</a></li>
                     </ul>
                 </nav>
-
-
             </header>
             <div className="offcanvas offcanvas-start" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
                 <div className="offcanvas-header">
@@ -55,14 +44,11 @@ function Navbar() {
                             <li><a href="#inicio">Inicio</a></li>
                             <li><a href="#tecnologias">Tecnologias</a></li>
                             <li><a href="#projetos">Projetos</a></li>
-                            <li><a href="#contatos">Contatos</a></li>
                         </ul>
                     </div>
                 </div>
             </div>
         </>
     );
-
-
 }
 export default Navbar;

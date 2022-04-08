@@ -1,0 +1,22 @@
+.slide-container img{
+    height: 100%;
+    width: 100%;
+}
+
+.details{
+    transition: 400ms;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.700);
+    height: 40%;
+    width: 100%;
+    padding: 1%;
+    color: whitesmoke;
+}
+
+.details h5{
+    margin-bottom: 5px;
+    font-weight: bolder;
+    padding: 10px;
+}

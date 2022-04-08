@@ -1,108 +1,28 @@
 .pres-section{
     position: relative;
-    padding: 9% 3%;
-    color: whitesmoke;
     overflow: hidden;
+    padding: 6% 3%;
 }
 
-.div-img{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    top: 15%;
-    right: 10%;
-    height: 280px;
-    width: 280px;
-    border: 5px solid whitesmoke;
-    border-radius: 100%;
-    overflow: hidden;
-    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.356);
-
-}
-
-.div-img img{
-    height: 120%;
-    width: 170%;
-}
-
-.h1-name{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size:5.6rem;
-    text-shadow: 0 0 10px rgba(0, 0, 0, 0.568);
+.pres-section h1{
+    font-size: 6rem;
+    font-family: 'Raleway', sans-serif;
     color: var(--secondaryColor);
-    letter-spacing: 5px;
-    line-height: 100px;
-    margin-right: 30%;
 }
 
-.h2-presentation{
-    margin: 30px 0 50px 0;
-    font-size: 3rem;
-    opacity: 1;
-    animation: ani 1s both ease-out;
-    font-family: 'Send Flowers', cursive;
-    
+.pres-section h2{
+    font-size: 5rem;
+    margin-right: 30px;
+
 }
 
-.h2-presentation:nth-child(2){
-    animation-delay: 1s;
-    margin-left: 20%;
+.presentation-text div{
+    display: flex;
+    width: 35%;
 }
 
-.h2-presentation:nth-child(3){
-    animation-delay: 0.4s;
-    margin-left: 10%;
-}
-
-@keyframes ani {
-    from{
-        transform: translateX(-100%);
-    }
-    to{
-        transform: translateX(5%);
-    }
-}
-
-@media (max-width:500px){
-    .pres-section{
-        height: auto;
-        padding-top: 80px;
-    }
-
-    .h2-presentation:nth-child(2){
-        animation-delay: 0.2s;
-        margin-left: 8%;
-    }
-    
-    .h2-presentation:nth-child(3){
-        animation-delay: 0.4s;
-        margin-left: 16%;
-    }
-
-    .div-img{
-        display: none;
-    }
-}
-
-@media (max-width:380px){
-
-    .h1-name{
-        font-size: 60px;
-        line-height: 70px;
-    }
-    .h2-presentation:nth-child(2){
-        animation-delay: 0.2s;
-        margin-left: 1%;
-    }
-    
-    .h2-presentation:nth-child(3){
-        animation-delay: 0.4s;
-        margin-left: 4%;
-    }
-
-    .h2-presentation{
-        font-size: 40px;
-    }
-
+.presentation-level{
+    border-left: 4px double var(--secondaryColor);
+    padding-left: 15px;
+    font-family: 'Lora', serif;
 }

@@ -1,8 +1,7 @@
 .contacts-section{
-    background-image: url("./../../../assets/contacts-bg.png");
-    background-size: 100% 250%;
+    background-color: #00000070;
     height: auto;
-    padding-top: 10px;
+    padding: 15px;
 }
 
 .contacts-section img{
@@ -17,22 +16,30 @@
 }
 
 .contacts-section a:hover{
-    
     text-decoration: underline;
     color: var(--secondaryColor);
     text-decoration-style: double;
 }
 
+.main-contacts img{
+    width: 24px;
+    margin-right: 15px;
+}
+
 .contacts-container{
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    margin: 20px auto;
+    
 }
 
 .contact{
-    margin: 30px;
+    margin: 10px;
 }
 
 footer{
-    padding-top: 50px;
+    padding: 5px;
     text-align: center;
     color: var(--secondaryColor);
 }

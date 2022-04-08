@@ -1,0 +1,39 @@
+.games-section {
+    padding: 10px 0 40px 0;
+    height: auto;
+}
+
+#carouselExampleCaptions{
+    height: 90%;
+    width: 100%;
+    margin: 10px auto;
+}
+
+.carousel-inner{
+    /*height: 90%;*/
+    width: 100%;
+}
+
+/* border: 2px solid tomato; */
+.carousel-item{
+    height: 100%;
+    width: 100%;
+}
+
+.carousel-indicators{
+    margin-bottom: -40px;
+}
+
+.slide-container{
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.800);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 72%;
+    margin: 15px auto;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.507);
+}

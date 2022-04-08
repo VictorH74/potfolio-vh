@@ -1,0 +1,41 @@
+.card-proj{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    margin: 6% 3%;
+}
+
+.card-proj a{
+    text-decoration: none;
+    margin-top: 100px;
+}
+
+.card-proj a:hover{
+    text-decoration: underline;
+    color: green;
+}
+
+.card-proj img{
+    position: relative;
+    width: 50%;
+    border-radius: 10px;
+}
+
+.proj-infor{
+    width: 47%;
+}
+
+.proj-link{
+    margin-top: 30px;
+    font-size: 20px;
+}
+
+
+.card-proj-techs{
+    margin-top: 30px;
+}
+
+.card-proj-techs img{
+    width: 25px;
+    margin: 0 5px;
+}

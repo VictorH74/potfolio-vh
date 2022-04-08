@@ -1,13 +1,27 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap');
-/* font-family: 'Poppins', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Lora&family=Raleway:ital,wght@1,300;1,400&display=swap');
+/* 
+font-family: 'Raleway', sans-serif; 
+font-family: "'Lora', serif";
+*/
 
 :root {
     --sectionHeight: 96vh;
-    --primaryColor: #084298;
-    --secondaryColor: #FF6347;
+    --primaryColor: #181818;
+    --secondaryColor: #09d809;
+}
+
+.theme-color{
+    color: var(--secondaryColor);
+}
+
+body{
+    background-color: var(--primaryColor);
+    background-image: url("https://www.transparenttextures.com/patterns/white-diamond-dark.png");
+    background-attachment: fixed;
 }
 
 * {
+    color: whitesmoke;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -15,7 +29,6 @@
 }
 
 section {
-    background-color: var(--primaryColor);
     height: var(--sectionHeight);
     overflow: hidden;
 }

@@ -10,11 +10,12 @@ import Technologies from "./components/sections/TechnologiesSection/Technologies
 function App(){
     return(
         <>
-            <a name="inicio"></a>
+            <a name="home"></a>
             <Navbar />
             <Presentation />
             <Technologies />
             <Projects />
+            <Games />
             <Contacts />
         </>
     );

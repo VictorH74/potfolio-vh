@@ -1,24 +1,16 @@
 import React from "react";
 import "./styles.css"
-import imgVictor from "./../../../assets/victoralmeida.png"
-import { ReactComponent as Arrow } from "./../../../assets/arrow.svg"
-
 
 function Presentation() {
-
     return (
-
         <section className="pres-section">
-            <div className="div-img">
-                <img src={imgVictor} alt="" />
-            </div>
-            <h1 className="h1-name" id="name">
-                Victor Hugo Almeida
-            </h1>
-            <div className="h2-div-pres">
-                <h2 className="h2-presentation"><span><Arrow /></span> Programador</h2>
-                <h2 className="h2-presentation" id="child-2"><span><Arrow /></span> Full-Stack</h2>
-                <h2 className="h2-presentation" id="child-3"><span><Arrow /></span> Junior</h2>
+            <div className="presentation-text">
+                <h2>Hello!</h2>
+                <h1>I' m Victor Almeida</h1>
+                <div>
+                    <h2 >A</h2>
+                    <h2 className="presentation-level">Full-Stack <br/> Developer <br/> Junior</h2>
+                </div>
             </div>
         </section>
         
