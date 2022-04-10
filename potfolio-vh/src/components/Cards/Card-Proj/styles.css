@@ -2,7 +2,7 @@
     position: relative;
     display: flex;
     justify-content: space-between;
-    margin: 6% 3%;
+    margin: 10% 9%;
     animation: show 1s ease ;
 }
 
@@ -26,13 +26,17 @@
 }
 
 .proj-infor{
-    padding: 50px;
+    padding: 20px 30px;
     width: 47%;
 }
 
 .proj-link{
     margin-top: 30px;
     font-size: 20px;
+}
+
+.proj-link img{
+    width: 24px;
 }
 
 .card-proj-techs{
@@ -53,6 +57,8 @@
     }
 }
 
+
+
 @media (max-width:900px){
     .card-proj{
         display: block;
@@ -70,12 +76,16 @@
         width: 100%;
         padding: 0 40px 0 40px;
     }
+
+    .proj-link img{
+        width: 24px;
+    }
 }
 
 @media (max-width:450px){
     .proj-infor{
         width: 100%;
-        padding: 0 20px 0 20px;
+        padding: 10px 20px 0 5px;
     }
 
     .proj-link{
@@ -85,6 +95,10 @@
 
     .card-proj-techs{
         margin: 0;
+    }
+
+    .proj-link img{
+        width: 24px;
     }
 
 }

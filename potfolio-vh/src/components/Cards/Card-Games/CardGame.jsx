@@ -7,7 +7,7 @@ export default function CardGame(props) {
         opacity: opacity
     }
     return (
-        <div className={props.id === 1 ? "carousel-item active" : "carousel-item"}>
+        <div className={props.id === 0 ? "carousel-item active" : "carousel-item"}>
             <div onMouseOver={() => setOpacity(1)} onMouseOut={() => setOpacity(0)} className="slide-container">
                 <img src={props.image ? props.image : "https://picsum.photos/800/450?random=1"} className="d-block" alt="..." />
                 <div style={detailsVisibility} className="details">

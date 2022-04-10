@@ -14,7 +14,9 @@ function Projects() {
                         index < 2 ? 
                         <CardProj
                             index={index}
+                            key={index}
                             image={project.image}
+                            gif={project.gif}
                             title={project.title}
                             link={project.link?project.link:null}
                             description={project.description}
@@ -26,6 +28,7 @@ function Projects() {
                             <CardProj
                                 index={index}
                                 image={project.image}
+                                gif={project.gif}
                                 title={project.title}
                                 link={project.link?project.link:null}
                                 description={project.description}

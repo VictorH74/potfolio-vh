@@ -1,9 +1,17 @@
 // PROJECT IMAGES
 import dsMovieImg from "./assets/project-images/DSMovies.png"
-import sellerDepartImg from "./assets/project-images/Seller_Department.png"
-import simonGame from "./assets/project-images/Simon Game.png"
+import UserProductRegistrationImg from "./assets/project-images/UserProductRegistration.png"
+import postPage from "./assets/project-images/post-page.png"
+import simonGame from "./assets/project-images/simon-game.png"
 import snakeGame from "./assets/project-images/snake-game.png"
 import passwordManager from "./assets/project-images/password-manager.png"
+
+// PROJECT GIFS
+import dsMovieImgGif from "./assets/project-images/gifs/dsmovies.gif"
+import userProductRegistrationGif from "./assets/project-images/gifs/UserProductsRegistration.gif"
+import postPageGif from "./assets/project-images/gifs/post-page.gif"
+import simonGameGif from "./assets/project-images/gifs/simon-game.gif"
+import snakeGameGif from "./assets/project-images/gifs/snake-game.gif"
 
 // CONTACT ICONS
 import githubIcon from "./assets/github-icon.svg"
@@ -47,33 +55,43 @@ const technologieIcons = [
         
 ]
 
-/* image resolution: 800x450 */
+/* image resolution: 600x380 */
 const projectDatas = [
     {
         id: 1,
         image: dsMovieImg,
-        slide: "Slide 1",
+        gif: dsMovieImgGif,
         title: "DSMovies",
         link: "https://dsmovie-potifolio-vh.netlify.app",
         description: "Projeto criado em um evento online de desenvolvimento Full-Stack com React e Java. Pagina para avaliação de filmes",
-        technologies: ["html5", "css3", "react", "java"],
+        technologies: ["html5", "css3", "react", "java", "springboot"],
         alt: "project image"
     },
     {
         id: 2,
-        image: sellerDepartImg,
-        slide: "Slide 2",
+        image: UserProductRegistrationImg,
+        gif: userProductRegistrationGif,
         title: "User and Product Registration System",
         link: "https://demoproject-vh.herokuapp.com/",
-        description: "Aplicação web usando Java com o framework Spring Boot. Util para gerentes de comercio. A pagina permite que você Cadastre Usuários, produtos ou categorias de produtos",
-        technologies: ["html5", "css3", "java"],
+        description: "Aplicação web usando Java com o framework Spring Boot. Útil para gerenciar comercios. A pagina permite que você Cadastre Usuários, produtos ou categorias de produtos",
+        technologies: ["html5", "css3", "java", "springboot"],
         alt: "project image"
         
     },
     {
         id: 3,
+        image: postPage,
+        gif: postPageGif,
+        title: "Post Page",
+        link: "https://post-page-vh.netlify.app/",
+        description: "Página web que inspirado em uma seção de postagem.",
+        technologies: ["html5", "css3", "javascript", "react"],
+        alt: "project image"
+        
+    },
+    {
         image: simonGame,
-        slide: "Slide 3",
+        gif: simonGameGif,
         title: "Simon Game",
         link: "https://gamezin-basico.netlify.app",
         description: "Alcance o maior score acertando o máximo a sequência correta",
@@ -81,18 +99,16 @@ const projectDatas = [
         alt: "project image"
     },
     {
-        id: 4,
         image: snakeGame,
-        slide: "Slide 4",
+        gif: snakeGameGif,
         title: "Snake Game",
         description: "Jogo da cobrinha para desktop com algumas mudanças. Quanto mais seu score for aumentando, mais rapido a cobrinha fica dificultando a locomoção",
         technologies: ["python"],
         alt: "project image"
     },
     {
-        id: 5,
+        id: 6,
         image: passwordManager,
-        slide: "Slide 5",
         title: "Password Manager",
         description: "Programa para desktop que permite que você salve contas de qualque plataforma em qualquer email que você adicionar. O programa também gera senhas aleatoriamente, caso o usuário deseje",
         technologies: ["python"],
@@ -102,10 +118,19 @@ const projectDatas = [
 
 const gameDatas = [
     {
-        id: 1,
-        name: "Simon Game",
-        link: "https://gamezin-basico.netlify.app/"
-    }
+        image: simonGame,
+        gif: simonGameGif,
+        title: "Simon Game",
+        link: "https://gamezin-basico.netlify.app",
+        description: "Alcance o maior score acertando o máximo a sequência correta",
+        alt: "project image"
+    },
+    {
+        image: snakeGame,
+        title: "Snake Game",
+        description: "Jogo da cobrinha para desktop com algumas mudanças. Quanto mais seu score for aumentando, mais rapido a cobrinha fica dificultando a locomoção",
+        alt: "project image"
+    },
 ]
 
 const contactDatas = [

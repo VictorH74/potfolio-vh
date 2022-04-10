@@ -30,14 +30,29 @@ li{
 }
 
 li a{
+    position: relative;
     font-size: 21px;
     padding: 15px;
     color: whitesmoke;
     text-decoration: none;
     list-style: none;
 }
+li a::after{
+    content: "";
+    position: absolute;
+    background-color: var(--secondaryColor);
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    transition: 200ms;
+    width: 0;
+}
 .menu li a:hover{
     color: rgb(145, 145, 145);
+}
+
+.menu li a:hover:after{
+    width: 100%;
 }
 
 .offcanvas{

@@ -1,6 +1,6 @@
 import React from "react";
 import CardGame from "../../Cards/Card-Games/CardGame";
-import { projectDatas } from "./../../../datas"
+import { gameDatas } from "./../../../datas"
 import "./styles.css"
 
 function Games() {
@@ -10,25 +10,25 @@ function Games() {
             <h1 className="section-title">My Games</h1>
             <div id="carouselExampleCaptions" className="carousel slide" data-bs-ride="carousel">
                 <div className="carousel-indicators">
-                    {projectDatas.map(
+                    {gameDatas.map(
                         (image, index) =>
                             <button 
-                                key={image.id} 
+                                key={index} 
                                 type="button" 
                                 data-bs-target="#carouselExampleCaptions" 
                                 data-bs-slide-to={index} 
-                                className={image.id === 1 ? "active" : ""} 
-                                aria-current={image.id === 1 ? "true" : ""} 
-                                aria-label={image.slide}
+                                className={index === 0 ? "active" : ""} 
+                                aria-current={index === 0 ? "true" : ""} 
+                                aria-label={`Slide ${index + 1}`}
                             />
                     )}
                 </div>
                 <div className="carousel-inner">
-                    {projectDatas.map(
-                        image =>
+                    {gameDatas.map(
+                        (image, index) =>
                             <CardGame 
-                                key={image.id}
-                                id={image.id}
+                                key={index}
+                                id={index}
                                 image={image.image}
                                 title={image.title}
                                 description={image.description}
