@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import "./style.css"
-import { ReactComponent as MenuIcon } from "./../../assets/menu-icon.svg"
+import "./style.css";
+import { ReactComponent as MenuIcon } from "./../../assets/menu-icon.svg";
 
 function Navbar() {
     const [scrollUp, setScrollUp] = useState(true);

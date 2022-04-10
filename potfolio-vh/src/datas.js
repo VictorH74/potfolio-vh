@@ -73,7 +73,7 @@ const projectDatas = [
         gif: userProductRegistrationGif,
         title: "User and Product Registration System",
         link: "https://demoproject-vh.herokuapp.com/",
-        description: "Aplicação web usando Java com o framework Spring Boot. Útil para gerenciar comercios. A pagina permite que você Cadastre Usuários, produtos ou categorias de produtos",
+        description: "Aplicação web usando Java com o framework Spring Boot. Útil para gerenciar comercios. A página permite que você cadastre usuários, produtos ou categorias de produtos",
         technologies: ["html5", "css3", "java", "springboot"],
         alt: "project image"
         
@@ -84,7 +84,7 @@ const projectDatas = [
         gif: postPageGif,
         title: "Post Page",
         link: "https://post-page-vh.netlify.app/",
-        description: "Página web que inspirado em uma seção de postagem.",
+        description: "Página web que simula uma seção de postagem.",
         technologies: ["html5", "css3", "javascript", "react"],
         alt: "project image"
         

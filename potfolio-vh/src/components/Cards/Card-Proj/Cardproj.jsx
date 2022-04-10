@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import linkIcon from "./../../../assets/link-icon.svg"
 import icons from "./../../../datas"
+import LinkIcon from '@material-ui/icons/Link';
 import "./styles.css"
 
 export default function CardProj(props) {
@@ -39,7 +40,7 @@ export default function CardProj(props) {
                 {
                     props.link !== null ?
                         <a href={props.link} target="_blank" rel="noreferrer" >
-                            <h4 className="theme-color proj-link">Project Link <img className="link-icon" src={linkIcon} alt="link icon"/></h4>
+                            <h4 className="theme-color proj-link">Project Link <LinkIcon/></h4>
                         </a> : ""
                 }
                 <div className="card-proj-techs">
