@@ -6,6 +6,10 @@ import simonGame from "./assets/project-images/simon-game.png"
 import snakeGame from "./assets/project-images/snake-game.png"
 import passwordManager from "./assets/project-images/password-manager.png"
 
+// GIFS GAMES
+import snakeGameGif from "./assets/project-images/gifs/snake-game.gif"
+import simonGameGif from "./assets/project-images/gifs/simon-game.gif"
+
 // CONTACT ICONS
 import githubIcon from "./assets/github-icon.svg"
 import linkedinIcon from "./assets/linkedin-icon.svg"
@@ -107,6 +111,7 @@ const projectDatas = [
 const gameDatas = [
     {
         image: simonGame,
+        gif: simonGameGif,
         title: "Simon Game",
         link: "https://gamezin-basico.netlify.app",
         description: "Alcance o maior score acertando o máximo a sequência correta",
@@ -114,6 +119,7 @@ const gameDatas = [
     },
     {
         image: snakeGame,
+        gif: snakeGameGif,
         title: "Snake Game",
         description: "Jogo da cobrinha para desktop com algumas mudanças. Quanto mais seu score for aumentando, mais rapido a cobrinha fica dificultando a locomoção",
         alt: "project image"

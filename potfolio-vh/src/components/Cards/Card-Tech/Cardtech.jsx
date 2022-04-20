@@ -11,6 +11,7 @@ function Cardtech(props) {
                 src={props.iconPath}
                 alt={props.name} />
         </div>
+        
     );
 }
 

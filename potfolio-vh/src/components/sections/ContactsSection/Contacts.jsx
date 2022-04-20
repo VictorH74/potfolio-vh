@@ -20,7 +20,7 @@ function Contacts(){
                         </div>:""  
                 )}
             </div>
-            <footer>&copy; Create by Viktor {new Date().getFullYear()}</footer>
+            <footer>&copy; Create by Victor {new Date().getFullYear()}</footer>
         </section>
     );
 }

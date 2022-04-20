@@ -29,7 +29,7 @@ function Games() {
                             <CardGame 
                                 key={index}
                                 id={index}
-                                image={image.image}
+                                image={image.gif}
                                 link={image.link}
                                 title={image.title}
                                 description={image.description}
