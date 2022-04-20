@@ -9,13 +9,13 @@ function Technologies() {
         <section className="tech-section">
             <a name="technologies"></a>
             <h3 className="section-title">My Technologies</h3>
-            <div className="container-cards ">
+            <div className="container-cards " >
                 <div className="row justify-content-center">
                     {
                         Icons.map(
-                            (icon) =>
+                            (icon, index) =>
                                 <div className="col-3 icons" key={icon.id}>
-                                    <Cardtech name={icon.name} iconPath={icon.iconURL} />
+                                    <Cardtech name={icon.name} iconPath={icon.iconURL} index={index}/>
                                 </div>
                         )
                     }

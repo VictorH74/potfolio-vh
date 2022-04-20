@@ -6,13 +6,6 @@ import simonGame from "./assets/project-images/simon-game.png"
 import snakeGame from "./assets/project-images/snake-game.png"
 import passwordManager from "./assets/project-images/password-manager.png"
 
-// PROJECT GIFS
-import dsMovieImgGif from "./assets/project-images/gifs/dsmovies.gif"
-import userProductRegistrationGif from "./assets/project-images/gifs/UserProductsRegistration.gif"
-import postPageGif from "./assets/project-images/gifs/post-page.gif"
-import simonGameGif from "./assets/project-images/gifs/simon-game.gif"
-import snakeGameGif from "./assets/project-images/gifs/snake-game.gif"
-
 // CONTACT ICONS
 import githubIcon from "./assets/github-icon.svg"
 import linkedinIcon from "./assets/linkedin-icon.svg"
@@ -60,7 +53,6 @@ const projectDatas = [
     {
         id: 1,
         image: dsMovieImg,
-        gif: dsMovieImgGif,
         title: "DSMovies",
         link: "https://dsmovie-potifolio-vh.netlify.app",
         description: "Projeto criado em um evento online de desenvolvimento Full-Stack com React e Java. Pagina para avaliação de filmes",
@@ -70,7 +62,6 @@ const projectDatas = [
     {
         id: 2,
         image: UserProductRegistrationImg,
-        gif: userProductRegistrationGif,
         title: "User and Product Registration System",
         link: "https://demoproject-vh.herokuapp.com/",
         description: "Aplicação web usando Java com o framework Spring Boot. Útil para gerenciar comercios. A página permite que você cadastre usuários, produtos ou categorias de produtos",
@@ -81,7 +72,6 @@ const projectDatas = [
     {
         id: 3,
         image: postPage,
-        gif: postPageGif,
         title: "Post Page",
         link: "https://post-page-vh.netlify.app/",
         description: "Página web que simula uma seção de postagem.",
@@ -91,7 +81,6 @@ const projectDatas = [
     },
     {
         image: simonGame,
-        gif: simonGameGif,
         title: "Simon Game",
         link: "https://gamezin-basico.netlify.app",
         description: "Alcance o maior score acertando o máximo a sequência correta",
@@ -100,7 +89,6 @@ const projectDatas = [
     },
     {
         image: snakeGame,
-        gif: snakeGameGif,
         title: "Snake Game",
         description: "Jogo da cobrinha para desktop com algumas mudanças. Quanto mais seu score for aumentando, mais rapido a cobrinha fica dificultando a locomoção",
         technologies: ["python"],
@@ -119,7 +107,6 @@ const projectDatas = [
 const gameDatas = [
     {
         image: simonGame,
-        gif: simonGameGif,
         title: "Simon Game",
         link: "https://gamezin-basico.netlify.app",
         description: "Alcance o maior score acertando o máximo a sequência correta",

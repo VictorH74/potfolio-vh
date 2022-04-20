@@ -11,17 +11,17 @@ function Projects() {
             {
                 !allProjects ?
                     projectDatas.map((project, index) =>
-                        index < 2 ? 
-                        <CardProj
-                            index={index}
-                            key={index}
-                            image={project.image}
-                            gif={project.gif}
-                            title={project.title}
-                            link={project.link?project.link:null}
-                            description={project.description}
-                            technologies={project.technologies}
-                        /> : ""
+                        index < 2 ?
+                            <CardProj
+                                index={index}
+                                key={index}
+                                image={project.image}
+                                gif={project.gif}
+                                title={project.title}
+                                link={project.link ? project.link : null}
+                                description={project.description}
+                                technologies={project.technologies}
+                            /> : ""
                     )
                     : projectDatas.map((project, index) => {
                         return (
@@ -30,7 +30,7 @@ function Projects() {
                                 image={project.image}
                                 gif={project.gif}
                                 title={project.title}
-                                link={project.link?project.link:null}
+                                link={project.link ? project.link : null}
                                 description={project.description}
                                 technologies={project.technologies}
                             />
@@ -38,8 +38,19 @@ function Projects() {
                     })
             }
             <div className="btn-show-all">
-                <button onClick={()=>setAllProjects(!allProjects)}>
-                    <span className="theme-color">{allProjects?"Show Less":"Show All"}</span>
+                <button onClick={() => {
+                    
+                    setAllProjects(!allProjects);
+
+                    if (!allProjects) {
+                        window.location.href = '#projects';
+                    }
+
+
+
+
+                }}>
+                    <span className="theme-color">{allProjects ? "Show Less" : "Show All"}</span>
                 </button>
             </div>
         </section>

@@ -9,6 +9,10 @@
     color: whitesmoke;
 }
 
+.navbar img{
+    width: 60px;
+}
+
 .navbar button{
     background-color: transparent;
     border: none;

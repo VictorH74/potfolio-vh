@@ -6,7 +6,7 @@ font-family: "'Lora', serif";
 
 :root {
     --sectionHeight: 96vh;
-    --primaryColor: #181818;
+    --primaryColor: #111111;
     --secondaryColor: #09d809;
 }
 
@@ -55,7 +55,6 @@ section {
     color: var(--secondaryColor);
     text-align: center;
     letter-spacing: 3px;
-    text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.39);
 }
 
 ::-webkit-scrollbar {

@@ -19,13 +19,13 @@ export default function CardProj(props) {
     }
 
     return (
-        <div className="card-proj">
+        <div className="card-proj" data-aos="flip-up">
             {
                 props.index % 2 === 0 || window.innerWidth < 900 ?
                         <img
                             onMouseOver={isOverSetter}
                             onMouseOut={isOutSetter}
-                            src={isOver ? props.gif : props.image?props.image:"https://picsum.photos/600/380?random=1"}
+                            src={props.image?props.image:"https://picsum.photos/600/380?random=1"}
                             alt=""
                         />
                     : ""
@@ -57,7 +57,7 @@ export default function CardProj(props) {
                         <img
                             onMouseOver={isOverSetter}
                             onMouseOut={isOutSetter}
-                            src={isOver ? props.gif : props.image}
+                            src={props.image}
                             alt=""
                         />
                     : ""

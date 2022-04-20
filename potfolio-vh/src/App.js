@@ -6,6 +6,8 @@ import Presentation from "./components/sections/PresentationSection/Presentation
 import Projects from "./components/sections/ProjectsSection/Projects";
 import Technologies from "./components/sections/TechnologiesSection/Technologies";
 import Type from "react-spinners/CircleLoader";
+import About from "./components/sections/AboutSection/About";
+import aos from "aos";
 
 
 function App() {
@@ -15,8 +17,11 @@ function App() {
         setLoading(true);
         setTimeout(() => {
             setLoading(false);
-        }, 8000);
+        }, 10);
+        aos.init();
     }, []);
+
+    
 
     return (
         <>
@@ -34,6 +39,7 @@ function App() {
                         <a name="home"></a>
                         <Navbar />
                         <Presentation />
+                        <About />
                         <Technologies />
                         <Projects />
                         <Games />

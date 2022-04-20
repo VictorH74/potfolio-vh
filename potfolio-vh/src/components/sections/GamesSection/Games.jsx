@@ -30,6 +30,7 @@ function Games() {
                                 key={index}
                                 id={index}
                                 image={image.image}
+                                link={image.link}
                                 title={image.title}
                                 description={image.description}
                             />
