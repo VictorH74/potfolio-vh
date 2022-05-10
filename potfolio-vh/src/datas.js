@@ -4,11 +4,13 @@ import UserProductRegistrationImg from "./assets/project-images/UserProductRegis
 import postPage from "./assets/project-images/post-page.png"
 import simonGame from "./assets/project-images/simon-game.png"
 import snakeGame from "./assets/project-images/snake-game.png"
+import pongGame from "./assets/project-images/pong-game.png"
 import passwordManager from "./assets/project-images/password-manager.png"
 
 // GIFS GAMES
 import snakeGameGif from "./assets/project-images/gifs/snake-game.gif"
 import simonGameGif from "./assets/project-images/gifs/simon-game.gif"
+import pongGameGif from "./assets/project-images/gifs/pong-game.gif"
 
 // CONTACT ICONS
 import githubIcon from "./assets/github-icon.svg"
@@ -20,36 +22,62 @@ import discordIcon from "./assets/discord-icon.svg"
 
 const technologieIcons = [
     {
-        id: 1,
         name: "html5",
         iconURL: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
     },
     {
-        id: 2,
         name: "css3",
         iconURL: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
     },
     {
-        id: 3,
         name: "javascript",
-        iconURL: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" },
+        iconURL: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+    },
     {
-        id: 4,
-        name: "react",
-        iconURL: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" },
-    {
-        id: 5,
         name: "python",
-        iconURL: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" },
+        iconURL: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+    },
     {
-        id: 6,
         name: "java",
-        iconURL: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" },
+        iconURL: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"
+    },
     {
-        id: 7,
         name: "springboot",
-        iconURL: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" },
-        
+        iconURL: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg"
+    },
+    {
+        name: "react",
+        iconURL: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+    },
+    {
+        name: "nextjs",
+        iconURL: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg"
+    },
+    {
+        name: "bootstrap",
+        iconURL: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg"
+    },
+    {
+        name: "tailwindcss",
+        iconURL: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg"
+    },
+    {
+        name: "git",
+        iconURL: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
+    },
+    {
+        name: "npm",
+        iconURL: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/npm/npm-original-wordmark.svg"
+    },
+    {
+        name: "heroku",
+        iconURL: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/heroku/heroku-original.svg"
+    },
+    {
+        name: "devicon",
+        iconURL: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/devicon/devicon-original.svg"
+    },
+
 ]
 
 /* image resolution: 600x380 */
@@ -71,7 +99,7 @@ const projectDatas = [
         description: "Aplicação web usando Java com o framework Spring Boot. Útil para gerenciar comercios. A página permite que você cadastre usuários, produtos ou categorias de produtos",
         technologies: ["html5", "css3", "java", "springboot"],
         alt: "project image"
-        
+
     },
     {
         id: 3,
@@ -81,7 +109,7 @@ const projectDatas = [
         description: "Página web que simula uma seção de postagem.",
         technologies: ["html5", "css3", "javascript", "react"],
         alt: "project image"
-        
+
     },
     {
         image: simonGame,
@@ -99,7 +127,13 @@ const projectDatas = [
         alt: "project image"
     },
     {
-        id: 6,
+        image: pongGame,
+        title: "Pong Game",
+        description: "Jogo de ping pongo personalizado para navegador adaptado apenas para teclado e mouse",
+        technologies: ["javascript"],
+        alt: "project image"
+    },
+    {
         image: passwordManager,
         title: "Password Manager",
         description: "Programa para desktop que permite que você salve contas de qualque plataforma em qualquer email que você adicionar. O programa também gera senhas aleatoriamente, caso o usuário deseje",
@@ -112,16 +146,20 @@ const gameDatas = [
     {
         image: simonGame,
         gif: simonGameGif,
-        title: "Simon Game",
         link: "https://gamezin-basico.netlify.app",
-        description: "Alcance o maior score acertando o máximo a sequência correta",
         alt: "project image"
     },
     {
         image: snakeGame,
         gif: snakeGameGif,
-        title: "Snake Game",
-        description: "Jogo da cobrinha para desktop com algumas mudanças. Quanto mais seu score for aumentando, mais rapido a cobrinha fica dificultando a locomoção",
+        alt: "project image"
+    },
+    {
+        image: snakeGame,
+        gif: pongGameGif,
+        title: "Pong Game",
+        link: "https://pong-game-vh.netlify.app/",
+        description: "Jogo de ping pongo personalizado para navegador adaptado apenas para teclado e mouse",
         alt: "project image"
     },
 ]
@@ -172,4 +210,4 @@ const contactDatas = [
 ]
 
 export default technologieIcons;
-export {projectDatas, gameDatas, contactDatas};
+export { projectDatas, gameDatas, contactDatas };
