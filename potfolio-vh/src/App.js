@@ -15,13 +15,9 @@ function App() {
 
     useEffect(() => {
         setLoading(true);
-        setTimeout(() => {
-            setLoading(false);
-        }, 10);
+        window.addEventListener("load", () => setLoading(false));
         aos.init();
     }, []);
-
-    
 
     return (
         <>
