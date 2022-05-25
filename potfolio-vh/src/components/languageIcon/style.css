@@ -1,5 +1,5 @@
 
-.card-tech-section {
+.language-icon  {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -9,41 +9,24 @@
 
 /* border: 2px solid tomato; */
 
-.card-tech-section img{
-    width: 50%;
+.language-icon  img{
+    width: 80%;
     border-radius: 15px;
 }
 
-
-@keyframes spinn {
-    from{
-        transform: rotateX(90deg); 
-    }
-    to{
-        transform: rotateX(0deg);
-    }
-}
-
 @media (max-width:580px){
-
-    #hexagon{
-        height: 30px;
-        width: 7.9rem;
-        margin-bottom: 40px;
-    }
     
-    .card-tech-section{
+    .language-icon {
         width: 180px;
         margin-bottom: 0;
     }
 
-    .card-tech-section img{
-        width: 60%;
+    .language-icon  img{
         border-radius: 5px;
     }
 }
 @media (max-width:450px){
-    .card-tech-section{
+    .language-icon {
         height: 100px;
         width: 100px;
     }

@@ -1,6 +1,6 @@
 import React from "react";
-import CardGame from "../../Cards/Card-Games/CardGame";
-import { gameDatas } from "./../../../datas"
+import GameCard from "../../components/Cards/gameCard";
+import gameDatas from "../../data/games"
 import "./styles.css"
 
 function Games() {
@@ -26,7 +26,7 @@ function Games() {
                 <div className="carousel-inner">
                     {gameDatas.map(
                         (image, index) =>
-                            <CardGame 
+                            <GameCard 
                                 key={index}
                                 id={index}
                                 image={image.gif}

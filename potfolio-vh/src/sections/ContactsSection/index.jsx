@@ -1,6 +1,6 @@
-import React, { useState } from "react";
+import React from "react";
 import "./style.css"
-import {contactDatas} from "./../../../datas"
+import contactDatas from "../../data/contacts"
 
 function Contacts(){
     return(
@@ -20,7 +20,7 @@ function Contacts(){
                         </div>:""  
                 )}
             </div>
-            <footer>&copy; Create by Victor {new Date().getFullYear()}</footer>
+            <footer>&copy; Create by Victor Almeida {new Date().getFullYear()}</footer>
         </section>
     );
 }

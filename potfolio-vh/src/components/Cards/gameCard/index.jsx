@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./styles.css"
 
-export default function CardGame(props) {
+export default function GameCard(props) {
     const [opacity, setOpacity] = useState(0);
     var detailsVisibility = {
         opacity: opacity

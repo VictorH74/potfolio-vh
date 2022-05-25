@@ -1,0 +1,27 @@
+.technology-section{
+    height: auto;
+    margin: 100px 0;
+}
+
+.tech-icon{
+    margin-bottom: 90px;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+}
+
+.tools {
+    background-color: rgb(201, 201, 201);
+    padding: 35px 0;
+}
+
+@media (max-width: 400px) {
+    .tech-icon{
+        margin-bottom: 40px;
+    }
+}
+
+
+

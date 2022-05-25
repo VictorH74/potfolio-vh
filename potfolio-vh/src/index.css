@@ -6,7 +6,7 @@ font-family: "'Lora', serif";
 
 :root {
     --sectionHeight: 96vh;
-    --primaryColor: #111111;
+    --primaryColor: #000000;
     --secondaryColor: #09d809;
 }
 
@@ -30,7 +30,7 @@ font-family: "'Lora', serif";
 
 body{
     background-color: var(--primaryColor);
-    background-image: url("https://www.transparenttextures.com/patterns/white-diamond-dark.png");
+    background-image: url("https://www.transparenttextures.com/patterns/black-orchid.png");
     background-attachment: fixed;
 }
 

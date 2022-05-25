@@ -1,0 +1,33 @@
+
+.tool-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 130px;
+    width: 130px;
+}
+
+.tool-icon img{
+    width: 50%;
+    border-radius: 15px;
+}
+
+@media (max-width:580px){
+    
+    .tool-icon{
+        width: 180px;
+        margin-bottom: 0;
+    }
+
+    .tool-icon img{
+        width: 60%;
+        border-radius: 5px;
+    }
+}
+@media (max-width:450px){
+    .tool-icon{
+        height: 100px;
+        width: 100px;
+    }
+
+}

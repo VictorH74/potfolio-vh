@@ -1,10 +1,9 @@
 import React, { useState } from "react";
-import linkIcon from "./../../../assets/link-icon.svg"
-import icons from "./../../../datas"
+import icons from "../../../data/technologies"
 import LinkIcon from '@material-ui/icons/Link';
 import "./styles.css"
 
-export default function CardProj(props) {
+export default function ProjectCard(props) {
     const [isOver, setIsOver] = useState(false);
 
     function isOverSetter() {
@@ -19,7 +18,7 @@ export default function CardProj(props) {
     }
 
     return (
-        <div className="card-proj" data-aos="flip-up">
+        <div className="card-proj" data-aos-once="true" data-aos="flip-up">
             {
                 props.index % 2 === 0 || window.innerWidth < 900 ?
                         <img

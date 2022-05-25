@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./style.css"
-import { projectDatas } from "./../../../datas"
-import CardProj from "../../Cards/Card-Proj/Cardproj";
+import projectDatas from "../../data/projects"
+import ProjectCard from "../../components/Cards/projectCard";
 
 function Projects() {
     const [allProjects, setAllProjects] = useState(false);
@@ -12,7 +12,7 @@ function Projects() {
                 !allProjects ?
                     projectDatas.map((project, index) =>
                         index < 2 ?
-                            <CardProj
+                            <ProjectCard
                                 index={index}
                                 key={index}
                                 image={project.image}
@@ -25,7 +25,7 @@ function Projects() {
                     )
                     : projectDatas.map((project, index) => {
                         return (
-                            <CardProj
+                            <ProjectCard
                                 index={index}
                                 image={project.image}
                                 gif={project.gif}
