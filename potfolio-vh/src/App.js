@@ -11,10 +11,9 @@ import aos from "aos";
 
 
 function App() {
-    const [loading, setLoading] = useState(false);
+    const [loading, setLoading] = useState(true);
 
     useEffect(() => {
-        setLoading(true);
         window.addEventListener("load", () => setLoading(false));
         aos.init();
     }, []);
@@ -26,7 +25,7 @@ function App() {
                     <div className="preloader">
                         <Type
                             size={80}
-                            color={"#09d809"}
+                            color={"var(--secondaryColor)"}
                             loading={loading}
                         />
                     </div>
