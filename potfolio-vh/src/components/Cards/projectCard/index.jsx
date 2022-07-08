@@ -6,6 +6,8 @@ import "./styles.css"
 export default function ProjectCard(props) {
     const [isOver, setIsOver] = useState(false);
 
+    const odd = props.index % 2 !== 0;
+
     function isOverSetter() {
         if (!isOver && props.gif) {
             setIsOver(true);
@@ -20,7 +22,7 @@ export default function ProjectCard(props) {
     return (
         <div className="card-proj" data-aos-once="true" data-aos="flip-up">
             {
-                props.index % 2 === 0 || window.innerWidth < 900 ?
+                !odd || window.innerWidth < 900 ?
                         <img
                             onMouseOver={isOverSetter}
                             onMouseOut={isOutSetter}
@@ -32,7 +34,7 @@ export default function ProjectCard(props) {
             }
 
             <div className="proj-infor" style={
-                { textAlign: props.index % 2 !== 0 && window.innerWidth > 900 ? "end" : "" }
+                { textAlign: odd && window.innerWidth > 900 ? "end" : "" }
             }>
                 <h3 className="theme-color">{props.title}</h3>
                 <h4>{props.description}</h4>
@@ -52,7 +54,7 @@ export default function ProjectCard(props) {
             </div>
 
             {
-                props.index % 2 !== 0 && window.innerWidth > 900 ?
+                odd && window.innerWidth > 900 ?
                         <img
                             onMouseOver={isOverSetter}
                             onMouseOut={isOutSetter}

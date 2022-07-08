@@ -8,7 +8,7 @@ import LanguageIcon from "../../components/languageIcon";
 function Technologies() {
     return (
         <section className="technology-section">
-            <a name="technologies"></a>
+            <a name="technologies" href="#technologies"> </a>
             <h3 className="section-title">My Technologies</h3>
             <div className="row justify-content-center tech-icon languages">
                 {
@@ -21,8 +21,8 @@ function Technologies() {
                                     </div>
                                 );
                             }
+                            return null;
                         }
-
                     )
                 }
             </div>
@@ -37,6 +37,7 @@ function Technologies() {
                                     </div>
                                 );
                             }
+                            return null;
                         }
                     )
                 }

@@ -10,6 +10,10 @@
     animation-delay: 700ms;
 }
 
+.proj-infor h4{
+    font-size: 20px;
+}
+
 .card-proj a{
     text-decoration: none;
 }
@@ -71,6 +75,11 @@
     .proj-infor{
         width: 100%;
         padding: 0 40px 0 40px;
+        margin-top: 15px;
+    }
+
+    .proj-infor h4{
+        font-size: 16px;
     }
 
     .proj-link img{

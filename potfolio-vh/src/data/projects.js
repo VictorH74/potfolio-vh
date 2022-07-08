@@ -1,5 +1,6 @@
 // PROJECT IMAGES
 import dsMovieImg from "../assets/project-images/DSMovies.png"
+import eSusPecImg from "../assets/project-images/eSUSPEC.png"
 import UserProductRegistrationImg from "../assets/project-images/UserProductRegistration.png"
 import postPage from "../assets/project-images/post-page.png"
 import simonGame from "../assets/project-images/simon-game.png"
@@ -10,12 +11,19 @@ import passwordManager from "../assets/project-images/password-manager.png"
 /* image resolution: 600x380 */
 const projectDatas = [
     {
+        title: "eSUS PEC Plugin",
+        image: eSusPecImg,
+        description: "Projeto desenvolvido para um cliente. Plugin para cadastro de consultas, exames e medicamentos. Inclui autenticação com login e senha, cadastro com ativação de conta por email, criação de assinaturas Premiums usando o sistema de pagamento digital do pagar.me e outras APIs externas",
+        technologies: ["react", "python", "django", 'bootstrap', 'docker'],
+        alt: "project image"
+    },
+    {
         id: 1,
         image: dsMovieImg,
         title: "DSMovies",
         link: "https://dsmovie-potifolio-vh.netlify.app",
         description: "Projeto criado em um evento online de desenvolvimento Full-Stack com React e Java. Pagina para avaliação de filmes",
-        technologies: ["html5", "css3", "react", "java", "springboot"],
+        technologies: ["react", "java", "springboot", 'bootstrap'],
         alt: "project image"
     },
     {
@@ -69,5 +77,15 @@ const projectDatas = [
         alt: "project image"
     }
 ]
+
+/*
+    {
+        image: eSUS_PEC_img,
+        title: "eSUS PEC",
+        description: "Plugin para cadastro de consultas, exames e medicamentos. Inclui autenticação com login e senha, cadastro com ativação de conta por email, criação de assinaturas Premiums usando o sistema de pagamento digital do pagar.me",
+        technologies: ["html5", "css3", "react", "python", "django"],
+        alt: "project image"
+    },
+*/
 
 export default projectDatas;

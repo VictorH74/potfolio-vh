@@ -28,6 +28,10 @@ const technologieIcons = [
         iconURL: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg"
     },
     {
+        name: "django",
+        iconURL: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg"
+    },
+    {
         name: "react",
         iconURL: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
     },
@@ -40,8 +44,8 @@ const technologieIcons = [
         iconURL: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg"
     },
     {
-        name: "tailwindcss",
-        iconURL: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg"
+        name: "docker",
+        iconURL: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg"
     },
     {
         name: "git",
